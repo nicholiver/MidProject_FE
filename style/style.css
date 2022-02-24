@@ -22,21 +22,22 @@
 }
 
 .title h1{
-    font-size: 3rem;
+    font-size: 4vw;
     font-weight: bold;
-    height: 4.7rem;
+    height: 6vw;
 }
 
 .title hr{
-    width: 25rem;
+    width: 40vw;
     color: #BD9060;
 }
 .title p{
-    font-size: 1.5rem;
+    font-size: 1.5vw;
     font-weight: 200;
     padding-top: 0.4rem;
 }
 li, a{
+    font-size: 1.5vw;
    text-decoration:none ; 
    padding: 0.5rem;
  
@@ -47,4 +48,29 @@ ul{
     justify-content:space-evenly;
     background-color: #08172E;
     
+}
+.about{
+    background-color: #000000;
+    text-align: center;
+    
+}
+.about h1{
+    font-size: 3vw;
+    padding: 3vw;
+}
+img{
+    width: 200px;
+    height: auto;
+    border-radius: 20px;
+    align-items: center;
+}
+.about p{
+    font-size: 1.5vw;
+    padding-top: 2vw;
+    padding-right: 15vw;
+    padding-left: 15vw;
+
+}
+.about h2{
+    font-size: 3vw;
 }
