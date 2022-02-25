@@ -5,11 +5,12 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
     color: #BD9060;
+    scroll-behavior: smooth;
+    transition: all .2s;
 }
 
 .home{
-    background-color: #08172E;
-    
+    background-image:url("../assets/LNY_Sage-6_WrapUp.jpg");    
 }
 
 .title{
@@ -18,13 +19,19 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-
-}
+  }
 
 .title h1{
     font-size: 4vw;
     font-weight: bold;
     height: 6vw;
+    position:relative;
+    animation-name: judul;
+    animation-duration: 2s ;
+}
+@keyframes judul {
+    0%   {bottom:20px;}
+    100% {bottom:0px}
 }
 
 .title hr{
@@ -34,23 +41,42 @@
 .title p{
     font-size: 1.5vw;
     font-weight: 200;
-    padding-top: 0.4rem;
+    padding-top: 0.4rem; 
+    position:relative;
+    animation-name: subjudul;
+    animation-duration: 2s ;
 }
-li, a{
-    font-size: 1.5vw;
-   text-decoration:none ; 
-   padding: 0.5rem;
- 
+@keyframes subjudul {
+    0%   {top:20px; opacity: 0;}
+    50% {top:20px; opacity: 0;}
+    75% {opacity: 50%;}
+    100% {top:0px; opacity: 100;}
 }
-ul{
-    display:flex;
+nav{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    position: absolute;
+  }
+  nav ul{
+    float:right;
+    margin-right: 30px;
+  }
+  nav ul li{
     list-style-type: none;
-    justify-content:space-evenly;
-    background-color: #08172E;
+    display: inline-block;
+    transition: 0.7s all;
+  }
+  nav ul li:hover{
+    background-color:#08172E;
+  }
+  nav ul li a{
+    text-decoration: none;
+    padding: 30px;
+  }
     
-}
 .about{
-    background-color: #000000;
+    background: linear-gradient(rgb(0, 0, 0), #08172E);
     text-align: center;
     
 }
@@ -63,14 +89,109 @@ img{
     height: auto;
     border-radius: 20px;
     align-items: center;
+    margin-bottom: 2vw;
 }
 .about p{
-    font-size: 1.5vw;
-    padding-top: 2vw;
-    padding-right: 15vw;
-    padding-left: 15vw;
+    font-size: 1.5vw
 
 }
 .about h2{
     font-size: 3vw;
+    margin-top: 3vw;
+    margin-bottom: 1vw;
+}
+#table{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.isiporto{
+    background-image: url("../assets/LNY_Sage-1_TravelPrep.jpg");
+    background-size: cover;
+    display:flex;
+    flex-direction: column ;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+.isiporto h1{
+    color: #08172E;
+    font-size: 4vw;
+    font-weight: bold;
+    margin-left: 40px;
+    height: 6vw;
+}
+
+.isiporto hr{
+    width: 25vw;
+    margin-left: 40px;
+    color: #08172E;
+}
+.isiporto h2{
+    font-size: 1.5vw;
+    font-weight: 400 ;
+    padding-top: 0.4rem;
+    margin-left: 40px;
+    color: #08172E;
+}
+.isiporto p{
+    font-size: 1vw;
+    font-weight: 400 ;
+    margin-left: 40px;
+    padding-top: 45rem;
+    position:absolute;
+    color: white;
+}
+.contact{
+    background: linear-gradient(297.69deg, #08172E, rgba(0, 0, 0, 0) 88.45%), #7c5f3f;
+    ;
+    text-align: center;
+    padding: 10rem 0;
+}
+
+input, textarea{
+    color: black;
+    background-color: rgba(220, 220, 220, 0.84);
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 1rem;
+    resize: none; /* biar gabisa digede2in */
+    border: none;
+}
+
+input:focus, textarea:focus{
+    border: none;
+    outline: none;
+}
+
+form{
+    background: rgba(196, 196, 196, 0.29);
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2.5rem;
+    border-radius: 1rem;
+}
+
+.contact h1{
+    font-size: 2.5rem;
+}
+
+form button{
+    background-color: #08172E;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+}
+
+form button:hover{
+    background-color: #123364;
 }
